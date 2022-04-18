@@ -24,6 +24,7 @@ import numpy as np
 from ELib import ELib
 from EPretrainProj import EPretrainProj
 
+
 def main():
     parser = argparse.ArgumentParser()
     # general params
@@ -43,13 +44,13 @@ def main():
     parser.add_argument("--unlabeled_sample", default=None, type=int, required=True, help='')
 
     ## ignore these!
-    parser.add_argument("--per_query", default=False, type=bool, required=False, help='') # ignore it
-    parser.add_argument("--model_path_2", default=None, type=str, required=False, help='') # ignore it
-    parser.add_argument("--lm_model_path", default=None, type=str, required=False, help='') # ignore it
-    parser.add_argument("--t_lbl_path_1", default=None, type=str, required=False, help='') # ignore it
-    parser.add_argument("--t_lbl_path_2", default=None, type=str, required=False, help='') # ignore it
-    parser.add_argument("--valid_path", default=None, type=str, required=False, help='') # ignore it
-    parser.add_argument("--device_2", default=None, type=int, required=False, help='') # ignore it
+    parser.add_argument("--per_query", default=False, type=bool, required=False, help='')  # ignore it
+    parser.add_argument("--model_path_2", default=None, type=str, required=False, help='')  # ignore it
+    parser.add_argument("--lm_model_path", default=None, type=str, required=False, help='')  # ignore it
+    parser.add_argument("--t_lbl_path_1", default=None, type=str, required=False, help='')  # ignore it
+    parser.add_argument("--t_lbl_path_2", default=None, type=str, required=False, help='')  # ignore it
+    parser.add_argument("--valid_path", default=None, type=str, required=False, help='')  # ignore it
+    parser.add_argument("--device_2", default=None, type=int, required=False, help='')  # ignore it
 
     args, unknown = parser.parse_known_args()
 
@@ -87,14 +88,9 @@ def main():
         ELib.PASS()
     ELib.PASS()
 
+
 if __name__ == "__main__":
     print("Started at", ELib.get_time())
     main()
     print("\nDone at", ELib.get_time())
     pass
-
-
-
-
-
-
