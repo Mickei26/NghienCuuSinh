@@ -21,7 +21,7 @@ See the file “sample.train” for a sample input.
 **Training and Evaluation**<br/>
 Below you can see an example command to run the code. This command tells the code to use a subset of the documents in the training and the unlabeled sets to train a model and evaluate in the test set—F1 measure is printed at the end of the execution.
 ```
-python -m self_pretraining.src.MainThread --cmd bert_reg \
+python3 -m self_pretraining.src.MainThread --cmd bert_reg \
 --itr 3 \
 --model_path /user/desktop/bert-base-uncased/ \
 --train_path /user/desktop/data/data.train \
